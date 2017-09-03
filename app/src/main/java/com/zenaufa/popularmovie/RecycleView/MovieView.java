@@ -13,7 +13,6 @@ import com.squareup.picasso.Picasso;
 import com.zenaufa.popularmovie.DetailActivity;
 import com.zenaufa.popularmovie.R;
 import com.zenaufa.popularmovie.model.Movie;
-import com.zenaufa.popularmovie.model.Movies;
 
 import java.util.List;
 
@@ -35,7 +34,7 @@ public class MovieView extends RecyclerView.Adapter<com.zenaufa.popularmovie.Rec
     @Override
     public MoviesHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         context = parent.getContext();
-        View view = LayoutInflater.from(context).inflate(R.layout.activity_main2, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.poster_main, parent, false);
         return new MoviesHolder(view);
     }
 
