@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="175dp"
+    android:layout_height="275dp"
+    android:id="@+id/poster"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    android:cropToPadding="false"
+    android:minHeight="275dp"
+    android:minWidth="175dp"
+    android:maxHeight="275dp"
+    android:maxWidth="175dp"
+    android:adjustViewBounds="false"
+    android:scaleType="centerCrop"
+     />
 
-    <ImageView
-        android:layout_width="175dp"
-        android:layout_height="275dp"
-        android:id="@+id/poster"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:cropToPadding="false"
-        android:minHeight="175dp"
-        android:minWidth="275dp"
-        />
-</LinearLayout>
