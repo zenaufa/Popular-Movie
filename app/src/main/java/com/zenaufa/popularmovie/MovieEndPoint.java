@@ -1,6 +1,5 @@
 package com.zenaufa.popularmovie;
 
-import com.zenaufa.popularmovie.model.Movie;
 import com.zenaufa.popularmovie.model.Movies;
 //import com.zenaufa.popularmovie.model.Movies;
 //import com.zenaufa.popularmovie.model.TrailerResults;

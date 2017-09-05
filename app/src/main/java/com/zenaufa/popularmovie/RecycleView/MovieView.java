@@ -13,7 +13,6 @@ import com.squareup.picasso.Picasso;
 import com.zenaufa.popularmovie.DetailActivity;
 import com.zenaufa.popularmovie.R;
 import com.zenaufa.popularmovie.model.Movie;
-import com.zenaufa.popularmovie.model.Movies;
 
 import java.util.List;
 

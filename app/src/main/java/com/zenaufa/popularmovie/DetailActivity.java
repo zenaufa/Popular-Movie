@@ -2,14 +2,11 @@ package com.zenaufa.popularmovie;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -52,7 +49,7 @@ public class DetailActivity extends AppCompatActivity {
             Description.setMovementMethod(new ScrollingMovementMethod());
             Rating_text = (TextView) findViewById(R.id.rating_text);
             review = (TextView) findViewById(R.id.review);
-            
+
             Picasso.with(this)
                     .load("http://image.tmdb.org/t/p/w185/" + intent.getStringExtra("movieImg"))
                     .placeholder(R.mipmap.ic_launcher)
