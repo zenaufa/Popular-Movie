@@ -2,7 +2,7 @@
     <string name="app_name">Popular Movie</string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_main_activitytest">MainActivitytest</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="bottombar_popular">Popular Movie</string>
+    <string name="bottombar_top">Top Movie</string>
+    <string name="bottombar_favorite">Favorite</string>
 </resources>
