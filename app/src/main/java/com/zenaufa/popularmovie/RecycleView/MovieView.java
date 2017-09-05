@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso;
 import com.zenaufa.popularmovie.DetailActivity;
 import com.zenaufa.popularmovie.R;
 import com.zenaufa.popularmovie.model.Movie;
+import com.zenaufa.popularmovie.model.Movies;
 
 import java.util.List;
 
@@ -39,7 +40,7 @@ public class MovieView extends RecyclerView.Adapter<com.zenaufa.popularmovie.Rec
     }
 
     @Override
-    public void onBindViewHolder(MoviesHolder holder, int position) {
+    public void onBindViewHolder(MoviesHolder holder, final int position) {
         final Movie result = MovieView.get(position);
         String url = "http://image.tmdb.org/t/p/w185" + result.getPosterPath();
         Picasso.with(context).load(url).fit().centerCrop()
@@ -50,9 +51,14 @@ public class MovieView extends RecyclerView.Adapter<com.zenaufa.popularmovie.Rec
             @Override
             public void onClick(View v) {
                 String s = new GsonBuilder().create().toJson(result);
-
                 Intent intent = new Intent(context, DetailActivity.class);
                 intent.putExtra("id", s);
+                intent.putExtra("movieDesc", MovieView.get(position).getOverview());
+                intent.putExtra("movieTitle", MovieView.get(position).getTitle());
+                intent.putExtra("movieId", MovieView.get(position).getId());
+                intent.putExtra("movieImg", MovieView.get(position).getPosterPath());
+                intent.putExtra("movieRelease", MovieView.get(position).getReleaseDate());
+                intent.putExtra("movieRating", MovieView.get(position).getVoteAverage());
                 context.startActivity(intent);
             }
         });
